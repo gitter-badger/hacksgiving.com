@@ -1,26 +1,27 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640" />
+---
+layout: default
+title: Hacksgiving
+---
 
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Hacksgiving by Lookout</title>
-  </head>
+{% for page in paginator.posts %}
+{% include post.html %}
+{% endfor %}
 
-  <body>
-    <center>
-        <img width="600" src="images/just-the-turkey.png"/>
-    </center>
-  </body>
-</html>
+
+{% if paginator.total_pages %}
+    <!-- Pagination links -->
+    <div class="pagination">
+    {% if paginator.previous_page %}
+        {% if paginator.previous_page == 1 %}
+            <a href="/" class="previous">Previous</a>
+        {% else %}
+            <a href="/page{{paginator.previous_page}}" class="previous">Previous</a>
+        {% endif %}
+    {% endif %}
+    <span class="page_number ">Page: {{paginator.page}} of {{paginator.total_pages}}</span>
+    {% if paginator.next_page %}
+        <a href="/page{{paginator.next_page}}" class="next ">Next</a>
+    {% endif %}
+    </div>
+{% endif %}

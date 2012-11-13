@@ -1,3 +1,78 @@
-@import url("screen.css");
-@import url("non-screen.css") handheld;
-@import url("non-screen.css") only screen and (max-device-width:640px);
+
+body {
+    background: #e7e7e7;
+    font-family: helvetica, sans-serif;
+background-color: #ece4d8;
+}
+
+#header {
+    color: #874933;
+    clear: all;
+}
+
+#header h1 {
+    font-size: 4em;
+    margin-left: 100px;
+    margin-top: 0px;
+    padding-top: 24px;
+    padding-left: 30px;
+}
+
+#header img {
+    float: left;
+    vertical-align: absmiddle;
+}
+
+#header #buttons {
+    float: right;
+}
+
+#footer {
+    color: #666;
+}
+
+#content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+#content h3, a:link {
+    color: #874933;
+}
+
+.post-date {
+    font-size: 0.7em;
+    float: right;
+}
+
+.post-utility {
+    border-top: 1px dotted #B2724F;
+    margin: 5px;
+    padding-top: 8px;
+    font-size: 0.7em;
+}
+
+.menu {
+    border-bottom: 1px dotted #B2724F;
+    margin-left: 132px;
+    margin-right: 132px;
+    margin-bottom: 50px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.menu li {
+    float: left;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.menu li a:link {
+    text-decoration: none;
+    color: #A21E21;
+}
