@@ -9,7 +9,7 @@ title: Hacksgiving
 {% endfor %}
 
 
-{% if paginator.total_pages %}
+{% unless paginator.total_pages == paginator.page %}
     <!-- Pagination links -->
     <div class="pagination">
     {% if paginator.previous_page %}
@@ -24,4 +24,4 @@ title: Hacksgiving
         <a href="/page{{paginator.next_page}}" class="next ">Next</a>
     {% endif %}
     </div>
-{% endif %}
+{% endunless %}
