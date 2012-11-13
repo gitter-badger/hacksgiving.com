@@ -1,0 +1,18 @@
+---
+permalink: /:year/:month/:title
+markdown: maruku
+maruku:
+  png_dir: images/latex
+  png_url: /images/latex
+  use_tex: false
+  use_divs: false
+tag_page_layout: 'tag'
+tag_page_dir: 'tag'
+lsi: false
+exclude:
+- Gemfile
+- Gemfile.lock
+pygments: true
+pretty_style: html_extension
+server_port: 4000
+paginate: 5
