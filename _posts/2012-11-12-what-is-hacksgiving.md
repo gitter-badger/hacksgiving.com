@@ -53,7 +53,7 @@ to bounce ideas and demos off their fellow hackers.
 At the end of the event, it'll be time for another meal (lunch) and some demos!
 
 The combination of adrenaline, sleep deprivation and eagerness to show off what
-you've built makes for an extremeley fun show-and-tell session that ends
+you've built makes for an extremely fun show-and-tell session that ends
 Hacksgiving.
 
 Immediately following demos, we'll vote on the coolest projects, and those
