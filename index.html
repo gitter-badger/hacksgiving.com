@@ -1,27 +1,31 @@
----
-layout: default
-title: Hacksgiving
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link media="screen"
+            type="text/css"
+            rel="stylesheet"
+            href="/stylesheets/core.css"/>
+    <title>Hacksgiving by Lookout</title>
+  </head>
 
-
-{% for page in paginator.posts %}
-{% include post.html %}
-{% endfor %}
-
-
-{% unless paginator.total_pages == paginator.page %}
-    <!-- Pagination links -->
-    <div class="pagination">
-    {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-            <a href="/" class="previous">Previous</a>
-        {% else %}
-            <a href="/page{{paginator.previous_page}}" class="previous">Previous</a>
-        {% endif %}
-    {% endif %}
-    <span class="page_number ">Page: {{paginator.page}} of {{paginator.total_pages}}</span>
-    {% if paginator.next_page %}
-        <a href="/page{{paginator.next_page}}" class="next ">Next</a>
-    {% endif %}
+  <body>
+    <div id="content">
+        <center><img src="images/just-the-turkey.png"/></center>
     </div>
-{% endunless %}
+
+    <br clear="all"/>
+
+    <div id="footer">
+        <center>
+
+            <img src="/images/shield_gray.png"/>
+            <br/>
+            <strong>
+                Powered by Lookout
+            </strong>
+        </center>
+    </div>
+  </body>
+</html>
